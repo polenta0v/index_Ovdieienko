@@ -3,18 +3,25 @@ h1 {
   padding: 20px;
   margin: 0;
   width: 100%;
-  font-size: 10px;
+  font-size: 18px;
   color: #403f50;
   text-align: center;
 }
 
+h1,
+.block1 {
+  box-sizing: border-box;
+}
 
 html,
 body {
   margin: 0;
   height: 100%;
   width: 100%;
+}
 
+body {
+  background-color: #abbccd;
 }
 
 .block1 {
@@ -38,6 +45,13 @@ caption {
   align-items: center;
 }
 
+#captionNtableWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 table {
   margin: 0;
   border-collapse: collapse;
@@ -45,10 +59,10 @@ table {
   justify-content: center;
   gap: 50px;
   align-items: center;
+  background-color: #9bafb2;
 }
 
 table {
-  border: 1px solid #000000;
   padding: 10px;
   border-collapse: collapse;
 }
@@ -57,6 +71,8 @@ th,
 td {
   border: 1px solid #000000;
   padding: 10px;
+  background-color: #475d69;
+  color: white;
 }
 
 .background-block {
@@ -77,11 +93,59 @@ td {
 
 .content-block {
   background-color: #475d69b3;
-  padding: 70px;
-  height: px;
-  text-align: center;
+  /* padding: 70px; */
+  /* text-align: center; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  /* border-radius: 8px; */
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.content-block div {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.content-block .left-side {
+  width: 70%;
+}
+
+.content-block h2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.content-block .left-side p {
+  text-indent: 3ch;
+}
+
+.content-block .left-side p::first-letter {
+  color: #1b4f5d;
+  font-size: 2em;
+}
+
+.content-block .right-side {
+  width: 30%;
+}
+
+.recipes-list {
+  height: 91%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.recipes-list div {
+  border: none;
+  background-color: #475d69;
+  ;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .table2 {
@@ -93,23 +157,4 @@ td {
   align-items: center;
   width: 100vw;
 
-}
-
-/*.block2 {
-  margin: 0 auto;
-  max-width: 100%;
-  background-color: #8c99b7;
-  padding: 20px;
-  margin: 0;
-  color: #403f50;
-  text-align: center;
-  font-size: 10px;
-}
-
-p {
-  margin: 0 0 20px 0;
-  max-width: 100%;
-  line-height: 0.8;
-  text-align-last: left;
-  font-size: 1.5rem;
 }
